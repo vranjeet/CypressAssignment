@@ -1,0 +1,27 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "echo I am inside Pretest",
+    "test": "cypress run",
+    "posttest": "echo I am inside Posttest",
+    "merge-reports": "mochawesome-merge ./cypress/mochawesome-report/*.json > ./report1.json",
+    "generate-htmlreport": "marge report1.json --reportDir ./cypress/mochawesome-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cy-verify-downloads": "^0.1.14",
+    "cypress": "^12.13.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.5.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

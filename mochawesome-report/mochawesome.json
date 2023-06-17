@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-06-10T20:31:43.326Z",
+    "end": "2023-06-10T20:31:43.588Z",
+    "duration": 262,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "142113f7-1013-477d-bc8d-76270e5bee8a",
+      "title": "",
+      "fullFile": "cypress/e2e/Test/sample.cy.js",
+      "file": "cypress/e2e/Test/sample.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "af1dc666-6d58-46ef-830e-7751c1591f6d",
+          "title": "First test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First test",
+              "fullTitle": "First test Suite First test",
+              "timedOut": null,
+              "duration": 28,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(true).to.equal(true);",
+              "err": {},
+              "uuid": "e1ebd29f-0102-454d-bc9f-a8dc209fe843",
+              "parentUUID": "af1dc666-6d58-46ef-830e-7751c1591f6d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Second test",
+              "fullTitle": "First test Suite Second test",
+              "timedOut": null,
+              "duration": 200,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(true).to.equal(false);",
+              "err": {
+                "message": "AssertionError: expected true to equal false",
+                "estack": "AssertionError: expected true to equal false\n    at Context.eval (webpack:///./cypress/e2e/Test/sample.cy.js:6:24)",
+                "diff": null
+              },
+              "uuid": "e2216008-edd1-4502-9b7d-b1602894fd26",
+              "parentUUID": "af1dc666-6d58-46ef-830e-7751c1591f6d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e1ebd29f-0102-454d-bc9f-a8dc209fe843"
+          ],
+          "failures": [
+            "e2216008-edd1-4502-9b7d-b1602894fd26"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 228,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
