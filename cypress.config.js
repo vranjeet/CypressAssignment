@@ -6,14 +6,16 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       this.screenshotOnRunFailure=true;
       require('cypress-mochawesome-reporter/plugin')(on);
+      on('task', verifyDownloadTasks);
       // implement node event listeners here
     },
   },
 });
-module.exports = defineConfig({
+/*module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       on('task', verifyDownloadTasks);
     },
   },
 });
+*/

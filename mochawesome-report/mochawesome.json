@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2023-06-10T20:31:43.326Z",
-    "end": "2023-06-10T20:31:43.588Z",
-    "duration": 262,
+    "start": "2023-06-17T13:14:32.865Z",
+    "end": "2023-06-17T13:14:33.123Z",
+    "duration": 258,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "142113f7-1013-477d-bc8d-76270e5bee8a",
+      "uuid": "e715fbe0-d2bd-476e-b5b5-ee54f9cb028e",
       "title": "",
       "fullFile": "cypress/e2e/Test/sample.cy.js",
       "file": "cypress/e2e/Test/sample.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "af1dc666-6d58-46ef-830e-7751c1591f6d",
+          "uuid": "218113ab-5046-40ce-9132-c22f3b59de70",
           "title": "First test Suite",
           "fullFile": "",
           "file": "",
@@ -44,11 +44,11 @@
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": null,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Test/sample.cy.js\"\n}",
               "code": "expect(true).to.equal(true);",
               "err": {},
-              "uuid": "e1ebd29f-0102-454d-bc9f-a8dc209fe843",
-              "parentUUID": "af1dc666-6d58-46ef-830e-7751c1591f6d",
+              "uuid": "fba3603f-9ee6-472f-80d7-22017d08f8f4",
+              "parentUUID": "218113ab-5046-40ce-9132-c22f3b59de70",
               "isHook": false,
               "skipped": false
             },
@@ -56,35 +56,35 @@
               "title": "Second test",
               "fullTitle": "First test Suite Second test",
               "timedOut": null,
-              "duration": 200,
+              "duration": 193,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
-              "context": null,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress/e2e/Test/sample.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"/Test/sample.cy.js/First test Suite -- Second test (failed).png\"\n      ]\n    ]\n  }\n]",
               "code": "expect(true).to.equal(false);",
               "err": {
                 "message": "AssertionError: expected true to equal false",
                 "estack": "AssertionError: expected true to equal false\n    at Context.eval (webpack:///./cypress/e2e/Test/sample.cy.js:6:24)",
                 "diff": null
               },
-              "uuid": "e2216008-edd1-4502-9b7d-b1602894fd26",
-              "parentUUID": "af1dc666-6d58-46ef-830e-7751c1591f6d",
+              "uuid": "6e6736ec-6f10-42e2-bba0-8fb0547befbf",
+              "parentUUID": "218113ab-5046-40ce-9132-c22f3b59de70",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e1ebd29f-0102-454d-bc9f-a8dc209fe843"
+            "fba3603f-9ee6-472f-80d7-22017d08f8f4"
           ],
           "failures": [
-            "e2216008-edd1-4502-9b7d-b1602894fd26"
+            "6e6736ec-6f10-42e2-bba0-8fb0547befbf"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 228,
+          "duration": 221,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -6,9 +6,7 @@
   "scripts": {
     "pretest": "echo I am inside Pretest",
     "test": "cypress run",
-    "posttest": "echo I am inside Posttest",
-    "merge-reports": "mochawesome-merge ./cypress/mochawesome-report/*.json > ./report1.json",
-    "generate-htmlreport": "marge report1.json --reportDir ./cypress/mochawesome-report"
+    "posttest": "echo I am inside Posttest"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +14,7 @@
     "cy-verify-downloads": "^0.1.14",
     "cypress": "^12.13.0",
     "cypress-file-upload": "^5.0.8",
-    "cypress-mochawesome-reporter": "^3.5.0",
+    "cypress-mochawesome-reporter": "^3.5.1",
     "cypress-xpath": "^2.0.1"
   },
   "dependencies": {

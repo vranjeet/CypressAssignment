@@ -1,4 +1,5 @@
 {
+    "watchForFileChanges":true,
     "reporter":"mochawesome",
     "reporterOptions":{
         "charts":true,
